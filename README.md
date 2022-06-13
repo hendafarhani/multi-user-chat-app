@@ -26,16 +26,22 @@ guest and a password guest.
 under server project
 
 ## Database :
-Two tables : Person and Message.
-Table Person: 
-- Cols: 
-o id: bigint, not null.
-o name: varchar(255), null.
-Table Message:
+Two tables : Person and Message. <br />
+
+
+Table Person: <br />
+- Cols: <br />
+o id: bigint, not null. <br />
+o name: varchar(255), null. <br />
+
+
+Table Message: <br />
 - Cols:
-o id: bigint, not null.
-o date: datetime, null.
-o text_msg: varchar(255), null.
-o person_id: foreign key, bigint, not null.
-Relation between Person and Message Tables: OneToMany. Means one record of table person can be 
+o id: bigint, not null. <br />
+o date: datetime, null. <br />
+o text_msg: varchar(255), null. <br />
+o person_id: foreign key, bigint, not null. <br />
+
+
+Relation between Person and Message Tables is OneToMany. Means one record of table person can be 
 related to multiple records of table Message.
