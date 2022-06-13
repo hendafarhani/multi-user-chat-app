@@ -1,0 +1,10 @@
+<div *ngIf="person;then chat_room;else login_page">
+</div>
+<ng-template #login_page>
+    <app-login-page (nameEntered)="nameEntered($event)"></app-login-page>
+</ng-template>
+
+<ng-template #chat_room>
+    <app-chat-room [personName]="person?.name" [messages]="messages" (sendMessage)="sendMessage($event)">
+    </app-chat-room>
+</ng-template>
