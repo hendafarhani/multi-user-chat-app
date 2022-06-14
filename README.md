@@ -36,7 +36,7 @@ o name: varchar(255), null. <br />
 
 
 Table Message: <br />
-- Cols:
+- Cols: <br />
 o id: bigint, not null. <br />
 o date: datetime, null. <br />
 o text_msg: varchar(255), null. <br />
